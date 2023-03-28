@@ -20,8 +20,6 @@ def URL(sc):
 	def URLFunction(Date):
 	
 
-		prod = products[Prod.lower()]
-
 		#get the year
 		Year = Date//10000
 		
