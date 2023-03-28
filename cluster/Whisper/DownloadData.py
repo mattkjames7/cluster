@@ -4,7 +4,7 @@ from ..Tools.Downloading._DownloadData import _DownloadData
 from . import _Whisper
 from .URL import URL
 
-def DownloadData(sc=1,Prod='Density',Date=[20010203,20211231],Overwrite=False,Verbose=True):
+def DownloadData(sc=1,Prod='Density',Date=[20010203,20221231],Overwrite=False,Verbose=True):
 	'''
 	Downloads EFI data.
 

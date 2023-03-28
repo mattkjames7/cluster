@@ -1,5 +1,6 @@
 import numpy as np
 from .ReadIndex import ReadIndex
+from . import _Whisper
 
 def DataAvailability(sc=1,Prod='Density'):
 	'''
@@ -45,6 +46,5 @@ def DataAvailability(sc=1,Prod='Density'):
 
 	
 	'''
-	prod = _Whisper.products[Prod.lower()]
-	idx = ReadIndex(sc,prod)
+	idx = ReadIndex(sc,Prod)
 	return np.unique(idx.Date)
