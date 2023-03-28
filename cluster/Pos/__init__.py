@@ -8,5 +8,5 @@ from .DataAvailability import DataAvailability
 from .DownloadData import DownloadData
 from .DeleteDate import DeleteDate
 from .Combine import Combine
-
-
+from .GetPos import GetPos
+from .GetPosInterpolator import GetPosInterpolator
