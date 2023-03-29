@@ -8,8 +8,8 @@ def ReadElectronDensity(date,sc):
 
 	data,_ = ReadCDF(date,sc,Prod='Density')
 
-	epoch = data['time_tags__C1_CP_WHI_ELECTRON_DENSITY']
-	dens = data['Electron_Density__C1_CP_WHI_ELECTRON_DENSITY']
+	epoch = data['time_tags__C{:d}_CP_WHI_ELECTRON_DENSITY'.format(sc)]
+	dens = data['Electron_Density__C{:d}_CP_WHI_ELECTRON_DENSITY'.format(sc)]
 
 	dtype = [	('Date','int32'),
 	  			('ut','float32'),
